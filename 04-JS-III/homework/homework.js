@@ -158,11 +158,14 @@ function cuentoElementos(arreglo){
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
 
-  array = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19];
-  if (array.length > 17){
- return array.length
+  arreglo = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19];
+  array =[]
+  for (i=0;i <= array.length; i++){
+  if (arreglo[i] > 17){
+    array.push(arraeglo[i]);
   } 
-
+  }
+  return array.length
 }
 
 
@@ -191,12 +194,7 @@ function empiezaConNueve(n) {
   //Escribe tu código aquí:
 
   const Numeros = [1,2,3,4,5,6,7,8,9]
-  for (i=0;i < 9 ; i++){
-      
-
-
 }
-
 
 function todosIguales(arreglo) {
   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
@@ -221,26 +219,36 @@ function mesesDelAño(array) {
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
   array =["Enero","mayo","marzo","septiembre","Junio","Noviembre","octubre", "diciembre"];
+  var MesesGuardados = []
 
   for (i=0; i < 8 ; i++ ){
      
-    if (array[i] == "Enero" || "Marzo" || "Noviembre" ){
-
-      var MesesGuardados = []
+    if (array[i] === "Enero" || "Marzo" || "Noviembre" ){
       MesesGuardados.push(array[i])
-
     } else {
       return ("No se encontraron los mese pedidos")
     }
-
   }
+  return (MesesGuardados)
 }
 
 
 function mayorACien(array) {
   //La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar en un nuevo array sólo los
   //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
-  // Tu código:s
+  // Tu código:
+  array = []
+  for (i=0;i < 201;i++){
+    array = [i]
+    if (array[i] > 100){
+
+      var newarray = [array[i]];
+
+      return newarray
+
+    } 
+  }
+   
 }
 
 
@@ -252,16 +260,14 @@ function breakStatement(numero) {
   //devolver: "Se interrumpió la ejecución"
   //Pista: usá el statement 'break'
   // Tu código:
+let = 0; 
+var newarray= [] ;
+while(i < 11) {
+numero = (numero + 2)
+newarray.push(numero);
+i++;
 }
-
-
-function continueStatement(numero) {
-  //Iterar en un bucle aumentando en 2 el numero recibido hasta un límite de 10 veces.
-  //Guardar cada nuevo valor en un array.    
-  //Devolver el array
-  //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
-  //Pista: usá el statement 'continue'
-  // Tu código:
+return newarray
 }
 
 
