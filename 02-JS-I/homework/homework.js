@@ -3,6 +3,7 @@
 // Crea una variable "string", puede contener lo que quieras:
 const nuevaString = "hola mundo";
 
+
 // Crea una variable numérica, puede ser cualquier número:
 const nuevoNum = 12;
 
@@ -37,6 +38,7 @@ function suma(x, y) {
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
   const suma = x + y ;
+  return suma 
 
 }
 
@@ -44,6 +46,7 @@ function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
   const resta = x - y ;
+  return resta 
   
 }
 
@@ -78,21 +81,25 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-   str1 = "str1"
-   str2 = "str2"
-  if (str1.length === str2.length ){
-  return (true);
-  } else {
-  return (false);
-  }
-}
+   firstword= "str1"
+   secondword = "str2"
+   
+   str1= firstword.length
+   str2 = secondword.length
 
+   if (str1 === str2){
+      return (true );
+   } else {
+     return (false);
+   }
+
+  }
 
 function menosQueNoventa(num) {
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
   // De lo contrario, devuelve "false"
   // Tu código:
-
+  
   if (num < 90){
   return (true) ;
 
@@ -276,14 +283,21 @@ function esVocal(letra){
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
   
-  if (letra == (a,e,i,o,u) ){
-  return ("es vocal");
+  letra = prompt('ingresa letra');
 
-  } else if (letra.length > 2 ){
-    return ("Dato incorrecto")
-  } else {
-    return ("Dato incorrecto ")
-  }
+if (letra === 'a' ){
+  return('es vocal');
+}else if (letra === 'e'){
+  return('es vocal');
+} else if (letra === 'i'){
+  return('es vocal');
+} else if (letra === 'o'){
+  return('es vocal');
+} else if (letra === 'u') {
+  return('es vocal');
+} else {
+  return('Dato incorrecto');
+}
   
 }
 
